@@ -437,6 +437,7 @@ header .container {
   /* Distribue l'espace uniformément */
   margin: 0 20px;
   /* Ajustez selon vos besoins pour l'espacement latéral */
+  color: var(--darkOne);
 }
 
 .step-bis {
@@ -454,4 +455,17 @@ header .container {
 
 html {
   scroll-behavior: smooth;
+}
+
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--backgroundColor);
+  /* Couleur de fond du header */
+  z-index: 1000;
+  /* Ajustez la valeur de z-index selon vos besoins */
+  padding: 10px;
+  /* Ajoutez le padding souhaité */
 }
