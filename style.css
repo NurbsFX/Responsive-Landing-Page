@@ -1,19 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 .light {
-  --mainColor: #64bcf4;
-  --hoverColor: #5bacdf;
+  --mainColor: #5A189A;
+  --hoverColor: #7B2CBF;
   --backgroundColor: #f1f8fc;
-  --darkOne: #312f3a;
-  --darkTwo: #45424b;
+  --darkOne: #10002B;
+  --darkTwo: #240046;
   --lightOne: #919191;
   --lightTwo: #aaa;
 }
 
 .dark {
-  --mainColor: #64bcf4;
-  --hoverColor: #5bacdf;
-  --backgroundColor: #192e3a;
+  --mainColor: #9D4EDD;
+  --hoverColor: #9D4EDD;
+  --backgroundColor: #1b002b;
   --darkOne: #f3f3f3;
   --darkTwo: #fff;
   --lightOne: #ccc;
@@ -124,7 +124,7 @@ header .container {
   color: #fff !important;
   background-color: var(--mainColor);
   border-radius: 16px;
-  text-transform: capitalize;
+  text-transform: none;
   transition: 0.3s;
 }
 
@@ -192,11 +192,23 @@ header .container {
   justify-content: center;
 }
 
+.highlight {
+  color: var(--hoverColor);
+}
+
 .big-title {
   font-size: 1.4rem;
   color: var(--darkOne);
-  text-transform: capitalize;
+  text-transform: none;
   line-height: 1.4;
+}
+
+.big-title-bis {
+  font-size: 1.4rem;
+  color: var(--darkOne);
+  text-transform: none;
+  line-height: 1.4;
+  margin-bottom: 50px;
 }
 
 .text {
@@ -275,6 +287,7 @@ header .container {
   0% {
     clip-path: circle(30% at -25% -25%);
   }
+
   100% {
     clip-path: circle(150% at 0 0);
   }
@@ -350,9 +363,12 @@ header .container {
     grid-gap: 2rem;
   }
 
-  .big-title {
+  .big-title h1 {
     font-size: 1.1rem;
+    text-transform: none;
+    /* Ajout pour éviter les majuscules au début de chaque mot */
   }
+
 
   .text {
     font-size: 0.95rem;
@@ -381,6 +397,7 @@ header .container {
 
   .big-title {
     font-size: 0.9rem;
+    text-transform: none;
   }
 
   .text {
@@ -390,4 +407,51 @@ header .container {
   .showcase-area .btn {
     font-size: 0.8rem;
   }
+}
+
+.steps-area {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  /* Alignement horizontal par défaut */
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .steps-area {
+    flex-direction: column;
+    /* Empilement vertical sur les écrans plus petits */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .steps-area {
+    flex-direction: column;
+    /* Vous pouvez également ajuster d'autres propriétés comme le padding, la marge, etc. */
+  }
+}
+
+.step {
+  flex: 1;
+  /* Distribue l'espace uniformément */
+  margin: 0 20px;
+  /* Ajustez selon vos besoins pour l'espacement latéral */
+}
+
+.step-bis {
+  flex: 1;
+  /* Distribue l'espace uniformément */
+  margin: 0 20px;
+  /* Ajustez selon vos besoins pour l'espacement latéral */
+  padding: 15px;
+  background-color: var(--mainColor);
+  color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(226, 226, 226, 0.5);
+  border-radius: 10px;
+}
+
+html {
+  scroll-behavior: smooth;
 }

@@ -1,78 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing Page With Light/Dark Mode</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <main>
-      <div class="big-wrapper light">
-        <img src="./img/shape.png" alt="" class="shape" />
 
-        <header>
-          <div class="container">
-            <div class="logo">
-              <img src="./img/logo.png" alt="Logo" />
-              <h3>Danvo in a new branch</h3>
-            </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing Page With Light/Dark Mode</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-            <div class="links">
-              <ul>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Testimonials</a></li>
-                <li><a href="#" class="btn">Sign up</a></li>
-              </ul>
-            </div>
+<body>
+  <main>
+    <div class="big-wrapper light">
+      <img src="./img/shape.png" alt="" class="shape" />
 
-            <div class="overlay"></div>
-
-            <div class="hamburger-menu">
-              <div class="bar"></div>
-            </div>
+      <header>
+        <div class="container">
+          <div class="logo">
+            <img src="./img/logo.png" alt="Logo" />
+            <h3>Next Level</h3>
           </div>
-        </header>
 
-        <div class="showcase-area">
-          <div class="container">
-            <div class="left">
-              <div class="big-title">
-                <h1>Future is here,</h1>
-                <h1>Start Exploring now.</h1>
-              </div>
-              <p class="text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Delectus eius distinctio odit, magni magnam qui ex perferendis
-                vitae!
-              </p>
-              <div class="cta">
-                <a href="#" class="btn">Get started</a>
-              </div>
-            </div>
+          <div class="links">
+            <ul>
+              <li><a href="#fonctionnalites">Fonctionnalités</a></li>
+              <li><a href="#pricing">Pricing</a></li>
+              <li><a href="#">Retours</a></li>
+              <li><a href="#" class="btn">S'inscrire</a></li>
+            </ul>
+          </div>
 
-            <div class="right">
-              <img src="./img/person.png" alt="Person Image" class="person" />
-            </div>
+          <div class="overlay"></div>
+
+          <div class="hamburger-menu">
+            <div class="bar"></div>
           </div>
         </div>
+      </header>
 
-        <div class="bottom-area">
-          <div class="container">
-            <button class="toggle-btn">
-              <i class="far fa-moon"></i>
-              <i class="far fa-sun"></i>
-            </button>
+      <div class="showcase-area">
+        <div class="container">
+          <div class="left">
+            <div class="big-title">
+              <h1>Aidez votre commerce à <span class="highlight">prospérer</span> avec Next
+                Level</h1>
+            </div>
+            <p class="text">
+              Nous propulsons les commerces locaux vers de nouveaux sommets en optimisant leur présence en ligne.<br>
+              Concrètement, nous augmentons <span class="highlight">vos avis positifs</span> en ligne afin d'améliorer
+              et consolider
+              la réputation de votre
+              commerce.
+            </p>
+
+            <div class="cta">
+              <a href="#" class="btn">Lancez-vous dès maintenant</a>
+            </div>
+          </div>
+
+          <div class="right">
+            <img src="./img/person.png" alt="Person Image" class="person" />
           </div>
         </div>
       </div>
-    </main>
 
-    <!-- JavaScript Files -->
+      <div class="showcase-area">
+        <div class="container">
+          <div class="big-title-bis" id="fonctionnalites">
+            <h1>Comment ça marche ?</h1>
+          </div>
+          <br>
+          <div class="steps-area">
+            <div class="step">
+              <h2>1.</h2>
+              <p>Description de l'étape 1.</p>
+            </div>
+            <div class="step">
+              <h2>2.</h2>
+              <p>Description de l'étape 2.</p>
+            </div>
+            <div class="step">
+              <h2>3.</h2>
+              <p>Description de l'étape 3.</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
-    <script src="./app.js"></script>
-  </body>
+      <div class="showcase-area">
+        <div class="container">
+          <div class="big-title-bis" id="pricing">
+            <h1>Nos offres</h1>
+          </div>
+          <br>
+          <div class="steps-area">
+            <div class="step-bis">
+              <h2>1.</h2>
+              <p>Description de l'offre 1.</p>
+            </div>
+            <div class="step-bis">
+              <h2>2.</h2>
+              <p>Description de l'offre 2.</p>
+            </div>
+            <div class="step-bis">
+              <h2>3.</h2>
+              <p>Description de l'offre 3.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="bottom-area">
+        <div class="container">
+          <button class="toggle-btn">
+            <i class="far fa-moon"></i>
+            <i class="far fa-sun"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- JavaScript Files -->
+
+  <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+  <script src="./app.js"></script>
+</body>
+
 </html>
