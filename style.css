@@ -211,6 +211,7 @@ header .container {
   text-transform: none;
   line-height: 1.4;
   margin-bottom: 50px;
+  padding-left: 150px;
 }
 
 .text {
@@ -412,34 +413,15 @@ header .container {
 }
 
 .steps-area {
-  width: 100%;
   display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  /* Alignement horizontal par défaut */
   margin-bottom: 50px;
-}
-
-@media screen and (max-width: 768px) {
-  .steps-area {
-    flex-direction: column;
-    /* Empilement vertical sur les écrans plus petits */
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .steps-area {
-    flex-direction: column;
-    /* Vous pouvez également ajuster d'autres propriétés comme le padding, la marge, etc. */
-  }
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 .step {
-  flex: 1;
-  /* Distribue l'espace uniformément */
-  margin: 0 20px;
-  /* Ajustez selon vos besoins pour l'espacement latéral */
   color: var(--darkOne);
+  padding-inline: 100px;
 }
 
 .step-bis {
